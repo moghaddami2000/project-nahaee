@@ -1,0 +1,23 @@
+# project-nahaee
+d={}
+def add():
+  k=input("نام خود را وارد کنبد")
+  v=input("نام کاربری خود را  وارد کنید")
+  d[k]=v;
+def delete():
+  i=input("برای حذف نام دانشجو را وارد کنید")
+  d.pop(i)
+def show():
+  for k,v in d.items():
+    print(v,':',k)    
+while True:
+  i=int(input('1:دانشجو جدید \n 2:حذف دانشجو \n 3:نمایش دانشجو \n 4:خروج \n '))
+
+  if i == 1:
+      add( )
+  elif i == 2:
+    delete()      
+  elif i == 3:
+    show()
+  else:
+    break;
